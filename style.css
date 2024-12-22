@@ -1,0 +1,78 @@
+body{
+    text-decoration: none;
+    color: #000;
+    background-color: gray;
+    width: 100vh;
+    align-items: start;
+    justify-content: start;
+}
+nav{
+    display: flex;
+    padding: 0 70%;
+    height: 35px;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+#menu , #login ,#aboutus , #contats{
+    text-decoration: none;
+    color: black;
+    width: 25%;
+    font-family: sans-serif;
+}
+#menu:hover, #login:hover ,#aboutus:hover , #contats:hover{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+width: 162px;
+background-color: #06CF9C;
+color: white;
+ border-radius: 30px;
+}
+.tg{
+    align-items: center;
+    justify-content: center;
+    height: 21px;
+    width: 52px;
+    display:inline-block;
+    position: relative;
+    border: solid black;
+    border-radius: 20px;
+}
+
+label {
+    margin: 1px;
+    background-color: yellow;
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    display: block;
+    border: solid  yellow;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"]:checked + label {
+  transform: translateX(29px);
+  background-color: gray;
+  border: solid gray;
+}
+input[type="checkbox"]:checked + body{
+    animation: x1 3s linear;
+}
+@keyframes x1 {
+  0%{
+    width: 1px;
+  }
+  100%{
+    width: 100%;
+  }
+}
